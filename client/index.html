@@ -1,0 +1,42 @@
+<!--
+  Path: client/index.html
+  Purpose: HTML entry point for the PixiJS app
+  Logic:
+    - Provides minimal HTML shell with dark background
+    - Loads main.ts as ES6 module via Vite
+    - Resets default margins/padding for full-screen canvas
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faerun Combat</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #1a1a2e;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
